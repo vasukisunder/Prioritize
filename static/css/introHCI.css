@@ -20,9 +20,8 @@
 }
 
 .jumbotron {
-     margin: center;
-     text-align: center;
-	position: relative;
+    margin: center;
+    text-align: center;
 	background: none;
 }
 
@@ -30,7 +29,7 @@
      color: #6e6e6e;
 }
 
-.project a {
+.project button{
      text-align: center;
 }
 
@@ -51,9 +50,11 @@
     text-align: center;
 }
 
-.estimate {
+.estimated_budget {
      text-align: center; 
-}
+     float: center;
+     padding-bottom: 10px;
+ }
 
 .info {
      text-align: right;

@@ -10,7 +10,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$("#dateToday").click(function(e) {
-		$('.jumbotron h1').text("Javascript has taken control");
+		$('.jumbotron h1').text("Estimated Budget");
 		$("#dateToday").text("CLICK ME");
 		//$(".jumbotron p").addClass("active");
 		$(".jumbotron p").toggleClass("active");
