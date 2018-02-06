@@ -1,26 +1,16 @@
 
 .project {
-     margin-left: 20px;
+     margin: auto;
      background-color: #b19cd9;
      padding: 20px;
      width: 525px;
 }
 
 .jumbotron {
+     margin: auto;
+     text-align: center;
 	position: relative;
 	background: none;
-}
-
-.jumbotron:after {
-     content:"";
-     background: url("../images/lorempixel.jumbotron.jpeg");
-     opacity: 0.2;
-     top: 0;
-     left: 0;
-     bottom: 0;
-     right: 0;
-     position: absolute;
-     z-index: -1;	
 }
 
 .jumbotron p {
@@ -31,6 +21,15 @@
      text-align: center;
 }
 
-.jumbotron p.active {
-     color: #1f6ddd;
+.btn-group button{
+
+    border: 1px solid blue; /* Blue border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+
+.estimate {
+     text-align: center;
 }
