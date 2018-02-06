@@ -1,13 +1,26 @@
 
 .project {
      margin: auto;
-     background-color: #b19cd9;
-     padding: 20px;
+     background-color: white;
+     padding: 0px;
      width: 525px;
+     border-top: 1px solid black;
+     border-left: 1px solid black;
+     border-right: 1px solid black;
+}
+
+#project5 {
+     margin: auto;
+     background-color: white;
+     padding: 0px;
+     width: 525px;
+     border-left: 1px solid black;
+     border-right: 1px solid black;
+     border-bottom: 1px solid black;
 }
 
 .jumbotron {
-     margin: auto;
+     margin: center;
      text-align: center;
 	position: relative;
 	background: none;
@@ -21,15 +34,27 @@
      text-align: center;
 }
 
-.btn-group button{
-
-    border: 1px solid blue; /* Blue border */
+.btn-group-date button{
+     margin: center;
     color: white; /* White text */
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
-    float: left; /* Float the buttons side by side */
+     float: center; /* Float the buttons side by side */
+}
+
+.btn-group-options {
+     margin: center;
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: center; /* Float the buttons side by side */
+    text-align: center;
 }
 
 .estimate {
-     text-align: center;
+     text-align: center; 
+}
+
+.info {
+     text-align: right;
 }
