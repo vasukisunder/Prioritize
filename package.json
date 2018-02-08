@@ -1,14 +1,12 @@
 {
   "name": "IntroHCI",
   "version": "0.0.1",
-  "author": "Intro HCI Staff",
-
+  "author": "Team Prioritize",
   "repository": {
     "type": "git",
-    "url": "https://github.com/IntroHCI/lab4"
+    "url": "https://github.com/PrioritizeCogs120/Prioritize"
   },
   "license": "MIT",
-
   "private": true,
   "scripts": {
     "start": "node app.js"
@@ -21,5 +19,5 @@
   },
   "engines": {
     "node": "0.10.x"
-  }  
+  }
 }
