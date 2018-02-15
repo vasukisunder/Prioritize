@@ -1,38 +1,45 @@
+<!doctype html>
 <html>
 <head>
-	<title>Team Prioritize</title>	
+	<title>Calendar</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="css/introHCI.css" rel="stylesheet">
-
-	<!-- this is a comment in HTML -->
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->        
+	<link href="css/calendar.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/introHCI.js"></script>
+     
 </head>
 
 <body>
 	<div class="container">
-		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-		<!-- p means paragraph -->
+		<!-- links to the information page -->
 		<div class="info"><h2><a href="info.html">&#9432</a></h2></div>
+
+		<!-- App Title -->
 		<div class="jumbotron">
-			<h1>Today's Budget</h1>
-			<!--<p>Date</p>
-			<button id="testjs" class="btn btn-primary btn-lg">Test Javascript</button>-->
-			<p>
-				<div class="btn-group-date">
-					<a href="yesterday.html">
-						<button class="btn btn-primary btn-lg">&lt</button>
-					</a>
-					<a href="calendar.html">
-						<button id="dateToday.js" class="btn btn-primary btn-lg">
+			<h1>Prioritize</h1>
+
+			<!-- Budgeting Status Bar that updates your daily costs -->
+			<div class="row" style="width: 100%">
+			<div class="column" id="col-left" style="width: 250px; min-height: 100%; float: left; background-color: red;">
+				<div id="statusBar">BAR</div>
+
+			</div> <!-- End of #column1 -->
+
+			<!-- The Date -->
+			<div class="column" id="col-right" style="margin-left: 300px; min-height: 100%; background-color: blue;">
+				<div class="btn-group-date btn-responsive">
+
+					<!-- get yesterday -->
+					<button class="btn btn-primary btn-lg btn-responsive" onclick="window.location='yesterday.html'">&lt</button>
+					<!-- end get yesterday -->
+
+					<!-- get today -->
+					<button id="dateToday.js" class="btn btn-primary btn-lg btn-responsive" onclick="window.location='calendar.html'">
+						<!-- This is the getDate function. Need to transfer this to javascript file-->
 						<script type="text/javascript">
 							var d = new Date();
 							var weekday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
@@ -42,83 +49,50 @@
 							document.write(d.getDate() + ", ");
 							document.write(d.getFullYear());
 						</script>
-						</button>
-					</a>
-					<a href="tomorrow.html">
-						<button class="btn btn-primary btn-lg">&gt</button>
-					</a>
+					</button> <!-- end today -->
+
+					<!-- get tomorrow -->
+					<button class="btn btn-primary btn-lg btn-responsive" onclick="window.location='tomorrow.html'">&gt</button>
+					<!-- end get tomorrow -->
+
+					<div class="project" id="project2">
+					<button class="btn btn-primary btn-lg btn-responsive" onclick="window.location='addSpending.html'">Add to List!</button>
 				</div>
-			</P>
-			<p class="estimated_budget">
-				<button class="btn btn-primary btn-lg">Estimate your Budget!</button>
-			</p>
 
-		</div>
+				</div> <!-- End of group of button for Date -->
 
-		<div class="btn-group-options">
-			<p>
-				<a href="account.html">
-					<button class="btn btn-primary btn-lg">Account</button>
-				</a>
-				<a href="log.html">
-					<button class="btn btn-primary btn-lg">History Log</button>
-				</a>
-				<a href="summary.html">
-					<button class="btn btn-primary btn-lg">Summary</button>
-				</a>
-			</p>	
-		</div>
+				<!-- The Item List -->
+				<div class="budgetList">
+					<form id="addFriendForm" role="form" method="get" action="/add">
+		    			<div class="form-group">
+		     				 <label for="item_name">Item Name:</label>
+		      				<input type="text" class="form-control" id="item_name" placeholder="Item Name" name="item-name">
+		    			</div>
+		   				 <div class="form-group">
+		     			 	<label for="item_price">Price:</label>
+		      				<input type="text" class="form-control" id="item_price" placeholder="Item Price" name="item_price">
+		    			</div>
+		    			<div class="form-group">
+		     			 	<label for="item_priority">Description:</label>
+		      				<input type="text" class="form-control" id="item_description" placeholder="Item Priority" name="item_priority">
+		    			</div>
+		    			<input type="submit" id="submitBtn" class="btn btn-default" value="Add Item"></input>
+					</form>
+				</div>
+				<!-- End of Item List -->
 
-		<div class="project" id="project1">
-			<a href="addSpending.html">
-			    <button class="btn btn-primary btn-lg">+</button>
-			</a>
-		</div>
-		<div class="project" id="project2">
-			<a href="addSpending.html">
-				   <button class="btn btn-primary btn-lg">+</button>
-			</a>
-		</div>
-		<div class="project" id="project3">
-			<a href="addSpending.html">
-			    <button class="btn btn-primary btn-lg">+</button>
-			</a>
-		</div>
-		<div class="project" id="project4">
-			<a href="addSpending.html">
-			    <button class="btn btn-primary btn-lg">+</button>
-			</a>
-		</div>
-		<div class="project" id="project5">
-			<a href="addSpending.html">
-			    <button class="btn btn-primary btn-lg">+</button>
-			</a>
-		</div>
-
-		<div class="btn-group-options">
-			<p>
-				<a href="account.html">
-					<button class="btn btn-primary btn-lg">
-						Account
-					</button>
-				</a>
-				<a href="log.html">
-					<button class="btn btn-primary btn-lg">
-						History Log
-					</button>
-				</a>
-				<a href="summary.html">
-					<button class="btn btn-primary btn-lg">
-						Summary
-					</button>
-				</a>
-			</p>	
-		</div>
-	</div>
+				<div class="estimated_budget">
+					<p>Budget Goal!<p>
+					<button class="btn btn-primary btn-lg btn-responsive" onclick="window.location='budget.html'">Add a Budget</button>
+				</div>
+			</div> <!-- End of #column2 -->
+			</div> <!-- End of rows -->
+		</div> <!-- End Jumobotron -->
+	</div> <!-- End Container -->
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	
 	<script src="js/introHCI.js"></script>
 </body>
+
 </html>

@@ -35,3 +35,19 @@ function projectClick(e) {
     	//description.html("<p>Stop clicking on me! You just did it at " + (new Date()) + "</p>");
     }
 }
+
+function goBack() {
+    window.history.back();
+}
+
+/*function getDate() {
+	var d = new Date();
+	var weekday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+	var monthname=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
+	document.write(weekday[d.getDay()] + ", ");
+	document.write(monthname[d.getMonth()] + ". ");
+	document.write(d.getDate() + ", ");
+	document.write(d.getFullYear());
+	return d;
+}*/
+

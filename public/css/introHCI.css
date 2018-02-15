@@ -1,28 +1,13 @@
 
+body {
+    positon:fixed;
+    padding: 10px;
+}
 .project {
      margin: auto;
      background-color: white;
      padding: 0px;
      width: 525px;
-     border-top: 1px solid black;
-     border-left: 1px solid black;
-     border-right: 1px solid black;
-}
-
-#project5 {
-     margin: auto;
-     background-color: white;
-     padding: 0px;
-     width: 525px;
-     border-left: 1px solid black;
-     border-right: 1px solid black;
-     border-bottom: 1px solid black;
-}
-
-.jumbotron {
-    margin: center;
-    text-align: center;
-	background: none;
 }
 
 .jumbotron p {
@@ -33,28 +18,77 @@
      text-align: center;
 }
 
+.budgetList {
+    padding: 10px;
+}
+
 .btn-group-date button{
-     margin: center;
+    margin: center;
     color: white; /* White text */
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
-     float: center; /* Float the buttons side by side */
+    float: right; /* Float the buttons side by side */
 }
-
-.btn-group-options {
-     margin: center;
-    color: white; /* White text */
-    padding: 10px 24px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    float: center; /* Float the buttons side by side */
-    text-align: center;
-}
-
-.estimated_budget {
-     text-align: center; 
-     float: center;
- }
 
 .info {
-     text-align: right;
+    float: right;
 }
+
+#statusBar{
+    width:20%;
+    height:40%;
+    background:blue;
+}
+
+/* Create two unequal columns that floats next to each other */
+.row {
+    display: table;
+    width: 100%;
+}
+
+.column {
+        display: table-cell;
+}
+
+#column-left {
+    float: left;
+    width: 25%;
+    background-color: solid-blue;
+}
+
+#column-right {
+    float: left;
+    background-color: solid-red;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/*@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }*/
+
+
+@media (max-width: 768px) {
+  .btn-responsive {
+    padding:2px 4px;
+    font-size:80%;
+    line-height: 1;
+    border-radius:3px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .btn-responsive {
+    padding:4px 9px;
+    font-size:90%;
+    line-height: 1.2;
+  }
+}
+
