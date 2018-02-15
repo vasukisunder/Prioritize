@@ -18,8 +18,16 @@ body {
      text-align: center;
 }
 
+.item_class {
+    font-size: 12;
+}
+
 .budgetList {
     padding: 10px;
+}
+
+.budgetList p {
+    line-height: 1.5px;
 }
 
 .btn-group-date button{
@@ -37,7 +45,7 @@ body {
 #statusBar{
     width:20%;
     height:40%;
-    background:blue;
+    background: blue;
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -53,7 +61,7 @@ body {
 #column-left {
     float: left;
     width: 25%;
-    background-color: solid-blue;
+    background-color: "#dfdfdf";
 }
 
 #column-right {
