@@ -40,6 +40,7 @@ function goBack() {
     window.history.back();
 }
 
+
 /*function getDate() {
 	var d = new Date();
 	var weekday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
