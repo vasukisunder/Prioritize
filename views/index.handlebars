@@ -54,12 +54,13 @@
 					<!-- get tomorrow -->
 					<button class="btn btn-primary btn-lg btn-responsive" onclick="window.location='tomorrow.html'">&gt</button>
 					<!-- end get tomorrow -->
+                </div> <!-- End of group of button for Date -->
 
-					<div class="project" id="project2">
-					<button class="btn btn-primary btn-lg btn-responsive" onclick="window.location='addSpending.html'">Add to List!</button>
+                <div class="estimated_budget">
+					<p>Your Goal</p>
+                    <p>budget: <input type="text" id="budget"></p>
+                    <input type="submit" value="Submit">
 				</div>
-
-				</div> <!-- End of group of button for Date -->
 
 				<!-- The Item List -->
 				<div class="budgetList">
@@ -67,7 +68,7 @@
 					<ol><div class="itemData">
 						<p class="item_name">{{item_name}}</p>
 						<p>{{item_price}}</p>
-						<p>Priority: {{item_priority}}</p>
+						<p>Category: {{item_priority}}</p>
 					</div></ol>
 					{{/each}}
 
@@ -89,10 +90,7 @@
 				</div>
 				<!-- End of Item List -->
 
-				<div class="estimated_budget">
-					<p>Budget Goal!<p>
-					<button class="btn btn-primary btn-lg btn-responsive" onclick="window.location='budget.html'">Add a Budget</button>
-				</div>
+				
 			</div> <!-- End of #column2 -->
 			</div> <!-- End of rows -->
 		</div> <!-- End Jumobotron -->
