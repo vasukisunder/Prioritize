@@ -66,7 +66,7 @@
 				<div class="budgetList">
 					{{#each itemDatabase}}
 					<ol><div class="itemData">
-						<p class="item_name">{{item_name}}</p>
+						<p>{{item_name}}</p>
 						<p>{{item_price}}</p>
 						<p>Category: {{item_priority}}</p>
 					</div></ol>
@@ -75,7 +75,7 @@
 					<form id="addItemForm" role="form" method="get" action="/add">
 		    			<div class="form-group">
 		     				 <label for="item_name">Item Name:</label>
-		      				<input type="text" class="form-control" id="item_name" placeholder="Input Name" name="item-name">
+		      				<input type="text" class="form-control" id="item_name" placeholder="Input Name" name="item_name">
 		    			</div>
 		   				 <div class="form-group">
 		     			 	<label for="item_price">Price:</label>
