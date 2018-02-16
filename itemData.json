@@ -2,18 +2,18 @@
 	"itemDatabase": [
 		{
 			"item_name": "Groceries",
-			"item_price": "25.00",
-			"item_priority": "4"			
+			"item_price": "$25.00",
+			"item_priority": "Physical Needs"			
 		},
 		{
 			"item_name": "Boba",
-			"item_price": "5.25",
-			"item_priority": "2"			
+			"item_price": "$5.25",
+			"item_priority": "A Treat"			
 		},
 		{
 			"item_name": "SDGE Bill",
-			"item_price": "30.00",
-			"item_priority": "5"			
+			"item_price": "$30.00",
+			"item_priority": "Other"			
 		}
 	]
 }
